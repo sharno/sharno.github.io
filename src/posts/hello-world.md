@@ -1,6 +1,8 @@
 ---
 title: "Hello World"
-tags: posts
+tags:
+  - posts
+  - programming
 layout: post.njk
 ---
 Welcome to the new Eleventy setup. This post is editable from the CMS.
