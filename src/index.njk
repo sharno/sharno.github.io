@@ -1,0 +1,48 @@
+---
+title: Home
+layout: base.njk
+---
+<p>
+  <a href="https://sharno.github.io">
+    <img src="https://media.giphy.com/media/3oKIPvLTTxfFYT68P6/giphy.gif" style="max-width:25%;float:right;" alt="weird birds gif" />
+  </a>
+</p>
+
+<h1 id="sharno">{{ site.title }}</h1>
+<h3 id="for-the-love-of-programming-languages-and-pixel-art">{{ site.description }}</h3>
+
+<p>مرحبا</p>
+
+<section class="arabic-section" lang="ar" dir="rtl">
+  <h2>ركن العربية</h2>
+  <p>مساحة مختصرة لمشاركاتي بالعربية عن البرمجة، التجارب اليومية، وكل ما يلهمني في بناء البرمجيات.</p>
+  <div class="arabic-card">
+    <strong>قريبا:</strong>
+    <ul>
+      <li>ملاحظات سريعة عن لغات وظيفية</li>
+      <li>لمحات عن رسوم البكسل وأدواتها</li>
+      <li>روابط لمشاريع وتجارب شخصية</li>
+      <li>قصص جحا</li>
+    </ul>
+  </div>
+</section>
+
+<pre><code class="language-fsharp">[&lt;EntryPoint&gt;]
+let main argv = printf "Hello World"
+</code></pre>
+
+<p>For the love of functional programming languages</p>
+<p>For the love of very expressive languages, like F#</p>
+<p>For the love of languages that prevents me from doing stupid things, like Rust</p>
+
+<hr/>
+
+<h3 id="blog">Blog</h3>
+<ul>
+  {% for post in collections.posts %}
+    <li>
+      <span class="date">{{ post.date | readableDate }}</span>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
