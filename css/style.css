@@ -113,6 +113,7 @@ tr:nth-child(even) { background: #eee }
 
 /* Arabic section */
 .arabic-section {
+  clear: both;
   direction: rtl;
   text-align: right;
   margin: 2rem 0;
@@ -141,4 +142,10 @@ tr:nth-child(even) { background: #eee }
 .arabic-section ul {
   padding-right: 1.2rem;
   margin: 0.5rem 0 0;
+}
+
+.hero-gif {
+  max-width: 25%;
+  float: right;
+  margin: 0 0 0.5rem 1rem;
 }
