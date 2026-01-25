@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByTag("posts").reverse();
   });
   eleventyConfig.addCollection("tagList", function (collectionApi) {
-    return collectionApi.getAll()
+    const tagSet = collectionApi.getAll()
       .reduce(function (tags, item) {
         if (!item.data.tags) return tags;
         item.data.tags.forEach(function (tag) {
@@ -20,6 +20,7 @@ module.exports = function (eleventyConfig) {
         });
         return tags;
       }, new Set());
+    return Array.from(tagSet).sort();
   });
   eleventyConfig.addFilter("readableDate", function (dateObj) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy/LL/dd");
