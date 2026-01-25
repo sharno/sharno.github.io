@@ -6,13 +6,13 @@
     <description>For the love of programming languages and pixel art</description>
     <link>https://sharno.github.io</link>
     <atom:link href="https://sharno.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>2026-01-25T19:42:33Z</lastBuildDate>
+    <lastBuildDate>2026-01-25T19:44:10Z</lastBuildDate>
     
       <item>
         <title>Hello World</title>
         <link>https://sharno.github.io/posts/hello-world/</link>
         <guid>https://sharno.github.io/posts/hello-world/</guid>
-        <pubDate>2026-01-25T19:42:33Z</pubDate>
+        <pubDate>2026-01-25T19:44:10Z</pubDate>
         <description><![CDATA[<p>Welcome to the new Eleventy setup. This post is editable from the CMS.</p>
 ]]></description>
       </item>

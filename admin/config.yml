@@ -2,7 +2,9 @@ backend:
   name: github
   repo: sharno/sharno.github.io
   branch: master
-  auth_endpoint: https://decap-cms-oauth.netlify.app/.netlify/functions/auth
+  base_url: https://decap-cms-oauth.netlify.app
+  auth_endpoint: /.netlify/functions/auth
+  site_domain: sharno.github.io
 
 media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
