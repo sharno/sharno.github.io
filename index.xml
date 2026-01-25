@@ -1,0 +1,21 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sharno</title>
+    <description>For the love of programming languages and pixel art</description>
+    <link>https://sharno.github.io</link>
+    <atom:link href="https://sharno.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>2026-01-25T19:37:45Z</lastBuildDate>
+    
+      <item>
+        <title>Hello World</title>
+        <link>https://sharno.github.io/posts/hello-world/</link>
+        <guid>https://sharno.github.io/posts/hello-world/</guid>
+        <pubDate>2026-01-25T19:37:45Z</pubDate>
+        <description><![CDATA[<p>Welcome to the new Eleventy setup. This post is editable from the CMS.</p>
+]]></description>
+      </item>
+    
+  </channel>
+</rss>
