@@ -1,6 +1,6 @@
 # sharno site (Eleventy)
 
-This repo uses Eleventy (11ty) to generate the static site and Decap CMS for editing posts.
+This repo uses Eleventy (11ty) to generate the static site and Pages CMS for editing content.
 
 ## Local development
 
@@ -19,20 +19,12 @@ npm run build
 
 The generated site will be in `_site/`.
 
-## Decap CMS setup
+## Pages CMS setup
 
-1. Update `src/admin/config.yml` if your repo, branch, or site URL changes.
-2. Deploy the `_site/` output.
-3. Visit `/admin` on your deployed site.
-
-### Decap CMS auth (required for GitHub Pages)
-
-GitHub Pages is static, so the Decap `github` backend needs an external OAuth service.
-This repo is configured to use the community OAuth endpoint:
-
-`https://decap-cms-oauth.netlify.app/auth`
-
-If that service stops working for you, replace `base_url` and `auth_endpoint` with your own OAuth proxy.
+1. Go to `https://app.pagescms.org/`.
+2. Sign in with GitHub and grant access to `sharno/sharno.github.io`.
+3. Pages CMS will read [`.pages.yml`](/home/sharno/src/sharno.github.io/.pages.yml) automatically.
+4. Edit content directly from the Pages CMS dashboard.
 
 ## GitHub Pages deployment
 
@@ -47,5 +39,6 @@ In your GitHub repo settings:
 
 - The source of truth lives under `src/`. Generated files should only be published from `_site` via the workflow.
 - Posts inherit their layout, collection tag, and permalink from `src/posts/posts.11tydata.js`.
+- Pages CMS configuration lives in `.pages.yml`.
 - Static assets in `css/` and `favicon.ico` are passed through as-is.
 - Uploads from the CMS land in `src/assets/uploads/`.
