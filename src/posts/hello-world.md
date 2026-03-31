@@ -1,8 +1,7 @@
 ---
 title: "Hello World"
+date: 2019-01-21
 tags:
-  - posts
   - programming
-layout: post.njk
 ---
 Welcome to the new Eleventy setup. This post is editable from the CMS.
