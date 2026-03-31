@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="{{ lang or 'en-us' }}" dir="{{ dir or 'ltr' }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/haskell.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </head>
-  <body>
+  <body{% if dir == "rtl" %} class="rtl-page"{% endif %}>
     <header>
       <nav>
         <ul>

@@ -149,3 +149,31 @@ tr:nth-child(even) { background: #eee }
   float: right;
   margin: 0 0 0.5rem 1rem;
 }
+
+.post-content[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+  font-family: "Amiri", "Changa", "Noto Naskh Arabic", serif;
+}
+
+.post-content[dir="rtl"] .date {
+  text-align: right;
+}
+
+.post-content[dir="rtl"] ul,
+.post-content[dir="rtl"] ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+.post-content[dir="rtl"] blockquote {
+  border-left: 0;
+  border-right: 5px solid #ccc;
+}
+
+.post-content[dir="rtl"] pre,
+.post-content[dir="rtl"] code,
+.post-content[dir="rtl"] .katex-display {
+  direction: ltr;
+  text-align: left;
+}

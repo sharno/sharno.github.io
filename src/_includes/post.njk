@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 ---
-<article>
+<article class="post-content"{% if lang %} lang="{{ lang }}"{% endif %}{% if dir %} dir="{{ dir }}"{% endif %}>
   <h1>{{ title }}</h1>
   <p class="date">{{ page.date | readableDate }}</p>
   {{ content | safe }}
