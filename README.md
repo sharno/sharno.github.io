@@ -28,7 +28,7 @@ The generated site will be in `_site/`.
 
 ## GitHub Pages deployment
 
-This repo includes `.github/workflows/deploy.yml` to build on every push to `master`
+This repo includes `.github/workflows/deploy.yml` to build on every push to `main`
 and publish `_site/` to the `gh-pages` branch.
 
 In your GitHub repo settings:
